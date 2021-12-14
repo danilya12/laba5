@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба: 5</title>
+</head>
+<body>
+<script type="text/javascript">
+        var str = prompt("Введите IP-адрес: ");
+        var regExp = /\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/;
+        if(str.match(regExp)===null){
+            alert("Вы ввели неверный IP-адрес");
+        }
+        else {
+            var tag = str.match(regExp);
+            alert(tag[0]);
+        }
+</script>   
+</body>
+</html>
